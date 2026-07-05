@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.photonbounce.leads.fragments.DashboardFragment"
+        android:label="Dashboard" />
+
+    <fragment
+        android:id="@+id/nav_leads"
+        android:name="com.photonbounce.leads.fragments.LeadsFragment"
+        android:label="Leads" />
+
+    <fragment
+        android:id="@+id/nav_microsites"
+        android:name="com.photonbounce.leads.fragments.MicrositesFragment"
+        android:label="Microsites" />
+
+    <fragment
+        android:id="@+id/nav_analytics"
+        android:name="com.photonbounce.leads.fragments.AnalyticsFragment"
+        android:label="Analytics" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.photonbounce.leads.fragments.SettingsFragment"
+        android:label="Settings" />
+
+</navigation>

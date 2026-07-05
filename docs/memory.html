@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Memory Model | Helion</title>
+<meta name="description" content="Helion - The next-generation programming language.">
+<link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><div class="container"><nav>
+<a href="../index.html" class="logo">
+<svg viewBox="0 0 36 36" fill="none" width="36" height="36"><path d="M18 2L4 10v16l14 8 14-8V10L18 2z" stroke="#00d4aa" stroke-width="2"/><path d="M18 8v20M10 12v12m16-12v12" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/></svg>
+Helion
+</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="docs.html">Docs</a></li>
+<li><a href="playground.html">Playground</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="download.html">Download</a></li>
+</ul>
+<div class="nav-cta">
+<a href="https://github.com/helion-lang/helion" target="_blank" rel="noopener">GitHub</a>
+<a href="playground.html" class="btn btn-primary">Try Online</a>
+</div>
+<button class="mobile-menu-btn" onclick="document.getElementById('navLinks').classList.toggle('active')">&#9776;</button>
+</nav></div></header>
+<section class="section" style="padding-top:100px;"><div class="container">
+<h1 class="section-title">Memory & Ownership</h1>
+<p class="section-subtitle">Memory-safe without garbage collection. Borrowed by default.</p>
+<div class="card" style="margin-bottom:24px;"><h2>Borrowed by Default</h2>
+<div class="code-block" style="margin-top:12px;"><span class="kw">fn</span> <span class="fn">greet</span>(name: <span class="type">str</span>) {  <span class="cm">// Actually: fn greet(name: &str)</span>
+    println(<span class="str">"Hello, {name}!"</span>);
+}  <span class="cm">// name is NOT consumed</span>
+
+<span class="kw">fn</span> <span class="fn">take_name</span>(name: ^<span class="type">str</span>) {  <span class="cm">// Takes ownership</span>
+    println(<span class="str">"I own: {name}"</span>);
+}  <span class="cm">// name dropped here</span></div></div>
+<div class="card" style="margin-bottom:24px;"><h2>Region Allocation</h2>
+<div class="code-block" style="margin-top:12px;"><span class="kw">fn</span> <span class="fn">process_batch</span>(data: <span class="type">Vec</span>&lt;<span class="type">Record</span>&gt;) {
+    <span class="kw">region</span> batch_region {
+        <span class="kw">let mut</span> temp = <span class="type">Vec</span>::new_in(batch_region);
+        <span class="cm">// All allocations freed at once</span>
+    }
+}</div></div>
+</div></section><footer><div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo"><svg viewBox="0 0 36 36" fill="none" width="28" height="28"><path d="M18 2L4 10v16l14 8 14-8V10L18 2z" stroke="#00d4aa" stroke-width="2"/><path d="M18 8v20M10 12v12m16-12v12" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/></svg>Helion</div>
+<p>The next-generation programming language. AI-native, formally verified, distributed by design.</p>
+</div>
+<div class="footer-links"><h4>Product</h4><ul>
+<li><a href="playground.html">Playground</a></li><li><a href="download.html">Download</a></li><li><a href="docs.html">Documentation</a></li>
+</ul></div>
+<div class="footer-links"><h4>Legal</h4><ul>
+<li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="about.html">About</a></li>
+</ul></div>
+</div>
+<div class="footer-bottom">
+<span>&copy; 2026 Helion Language. Apache 2.0 / MIT.</span>
+<span>Free forever. Powered by ads.</span>
+</div>
+</div></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>

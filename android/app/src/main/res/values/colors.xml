@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core brand colors -->
+    <color name="primary">#00D4FF</color>
+    <color name="primary_dark">#00A8CC</color>
+    <color name="accent">#00D4FF</color>
+    <color name="accent_secondary">#7B61FF</color>
+    
+    <!-- Background colors -->
+    <color name="background_dark">#0A0F1E</color>
+    <color name="surface_dark">#111827</color>
+    <color name="surface_variant_dark">#1F2937</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#F9FAFB</color>
+    <color name="text_secondary">#9CA3AF</color>
+    <color name="text_muted">#6B7280</color>
+    
+    <!-- Status colors -->
+    <color name="status_new">#3B82F6</color>
+    <color name="status_contacted">#F59E0B</color>
+    <color name="status_qualified">#8B5CF6</color>
+    <color name="status_proposal">#EC4899</color>
+    <color name="status_won">#10B981</color>
+    <color name="status_lost">#EF4444</color>
+    <color name="status_archived">#6B7280</color>
+    
+    <!-- VIP / Premium -->
+    <color name="vip_gold">#FBBF24</color>
+    <color name="vip_gradient_start">#FBBF24</color>
+    <color name="vip_gradient_end">#F59E0B</color>
+    
+    <!-- Misc -->
+    <color name="divider">#374151</color>
+    <color name="ripple">#1FFFFFFF</color>
+    <color name="error">#EF4444</color>
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="info">#3B82F6</color>
+    
+    <!-- Chart colors -->
+    <color name="chart_1">#00D4FF</color>
+    <color name="chart_2">#7B61FF</color>
+    <color name="chart_3">#F59E0B</color>
+    <color name="chart_4">#10B981</color>
+    <color name="chart_5">#EC4899</color>
+    <color name="chart_6">#EF4444</color>
+</resources>

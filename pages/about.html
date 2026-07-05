@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About | Helion</title>
+<meta name="description" content="Helion - The next-generation programming language.">
+<link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><div class="container"><nav>
+<a href="../index.html" class="logo">
+<svg viewBox="0 0 36 36" fill="none" width="36" height="36"><path d="M18 2L4 10v16l14 8 14-8V10L18 2z" stroke="#00d4aa" stroke-width="2"/><path d="M18 8v20M10 12v12m16-12v12" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/></svg>
+Helion
+</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="docs.html">Docs</a></li>
+<li><a href="playground.html">Playground</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="download.html">Download</a></li>
+</ul>
+<div class="nav-cta">
+<a href="https://github.com/helion-lang/helion" target="_blank" rel="noopener">GitHub</a>
+<a href="playground.html" class="btn btn-primary">Try Online</a>
+</div>
+<button class="mobile-menu-btn" onclick="document.getElementById('navLinks').classList.toggle('active')">&#9776;</button>
+</nav></div></header>
+<section class="section" style="padding-top:100px;"><div class="container">
+<h1 class="section-title">About Helion</h1>
+<div class="card" style="margin-bottom:24px;">
+<h2>Our Mission</h2>
+<p style="color:var(--text-secondary);margin-top:12px;">Helion was born from a simple belief: programming should be as intuitive as expressing intent, as safe as mathematical proof, and as powerful as distributed supercomputing. We are building the language that makes all others feel like assembly.</p>
+</div>
+<div class="card" style="margin-bottom:24px;">
+<h2>Technology Stack</h2>
+<div class="grid-2" style="margin-top:16px;">
+<div><h4 style="color:var(--accent);">Type System</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Quantitative Type Theory with dependent, linear, refinement, and effect types.</p></div>
+<div><h4 style="color:var(--accent);">Compiler</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Self-hosting Rust-based compiler targeting LLVM, WebAssembly, and GPU dialects.</p></div>
+<div><h4 style="color:var(--accent);">AI Integration</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Language-level LLM primitives with typed interfaces and formal verification.</p></div>
+<div><h4 style="color:var(--accent);">Runtime</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Actor-based scheduler with CRDT state, automatic distribution, and time-travel debugging.</p></div>
+</div>
+</div>
+<div class="card">
+<h2>Roadmap</h2>
+<div style="margin-top:16px;">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><div style="width:20px;height:20px;border-radius:50%;background:var(--success);"></div><div><strong>v0.1.0-alpha</strong> <span style="color:var(--text-muted);">(Current)</span><br><span style="color:var(--text-secondary);font-size:0.9rem;">Language specification, bootstrap compiler, basic tooling</span></div></div>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><div style="width:20px;height:20px;border-radius:50%;background:var(--border);"></div><div><strong>v0.2</strong> <span style="color:var(--text-muted);">(Q3 2026)</span><br><span style="color:var(--text-secondary);font-size:0.9rem;">Self-hosting compiler, REPL, package manager</span></div></div>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><div style="width:20px;height:20px;border-radius:50%;background:var(--border);"></div><div><strong>v0.5</strong> <span style="color:var(--text-muted);">(Q1 2027)</span><br><span style="color:var(--text-secondary);font-size:0.9rem;">Full compiler with optimizations, standard library complete</span></div></div>
+<div style="display:flex;align-items:center;gap:12px;"><div style="width:20px;height:20px;border-radius:50%;background:var(--border);"></div><div><strong>v1.0</strong> <span style="color:var(--text-muted);">(Q3 2027)</span><br><span style="color:var(--text-secondary);font-size:0.9rem;">Production-ready with verified compilation, IDE support, ecosystem</span></div></div>
+</div>
+</div>
+</div></section><footer><div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo"><svg viewBox="0 0 36 36" fill="none" width="28" height="28"><path d="M18 2L4 10v16l14 8 14-8V10L18 2z" stroke="#00d4aa" stroke-width="2"/><path d="M18 8v20M10 12v12m16-12v12" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/></svg>Helion</div>
+<p>The next-generation programming language. AI-native, formally verified, distributed by design.</p>
+</div>
+<div class="footer-links"><h4>Product</h4><ul>
+<li><a href="playground.html">Playground</a></li><li><a href="download.html">Download</a></li><li><a href="docs.html">Documentation</a></li>
+</ul></div>
+<div class="footer-links"><h4>Legal</h4><ul>
+<li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="about.html">About</a></li>
+</ul></div>
+</div>
+<div class="footer-bottom">
+<span>&copy; 2026 Helion Language. Apache 2.0 / MIT.</span>
+<span>Free forever. Powered by ads.</span>
+</div>
+</div></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>

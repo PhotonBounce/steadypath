@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Profile Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.PhotonBounce.TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timezone"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinner_timezone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_search"
+            android:backgroundTint="@color/surface_variant_dark"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tier Section -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.PhotonBounce.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_tier"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary" />
+
+                <TextView
+                    android:id="@+id/tv_tier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tier_free"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_upgrade"
+                    style="@style/Widget.PhotonBounce.Button.VIP"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/upgrade_vip"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Notifications -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.PhotonBounce.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/notifications"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Actions -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            style="@style/Widget.PhotonBounce.Button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/save_changes"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_logout"
+            style="@style/Widget.PhotonBounce.Button.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/logout"
+            android:textColor="@color/error"
+            app:strokeColor="@color/error" />
+
+    </LinearLayout>
+</ScrollView>

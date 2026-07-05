@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Photon Bounce Leads</string>
+    
+    <!-- Auth -->
+    <string name="login">Log In</string>
+    <string name="register">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Full Name</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Don\'t have an account? Sign Up</string>
+    <string name="have_account">Already have an account? Log In</string>
+    <string name="logout">Log Out</string>
+    
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_leads">Leads</string>
+    <string name="nav_microsites">Microsites</string>
+    <string name="nav_analytics">Analytics</string>
+    <string name="nav_settings">Settings</string>
+    
+    <!-- Dashboard -->
+    <string name="total_leads">Total Leads</string>
+    <string name="won_leads">Won</string>
+    <string name="avg_ml_score">Avg ML Score</string>
+    <string name="active_niches">Active Niches</string>
+    <string name="recent_leads">Recent Leads</string>
+    <string name="view_all">View All</string>
+    
+    <!-- Leads -->
+    <string name="search_leads">Search leads…</string>
+    <string name="filter_status">Filter by status</string>
+    <string name="lead_detail">Lead Detail</string>
+    <string name="status">Status</string>
+    <string name="add_note">Add Note</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
+    <string name="notes">Notes</string>
+    <string name="swipe_edit">Edit</string>
+    <string name="swipe_archive">Archive</string>
+    
+    <!-- Statuses -->
+    <string name="status_new">New</string>
+    <string name="status_contacted">Contacted</string>
+    <string name="status_qualified">Qualified</string>
+    <string name="status_proposal">Proposal</string>
+    <string name="status_won">Won</string>
+    <string name="status_lost">Lost</string>
+    <string name="status_archived">Archived</string>
+    
+    <!-- Microsites -->
+    <string name="add_microsite">Add Microsite</string>
+    <string name="microsite_name">Microsite Name</string>
+    <string name="microsite_slug">URL Slug</string>
+    <string name="microsite_niche">Niche</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="microsite_limit_free">Free tier: 1 microsite max</string>
+    
+    <!-- Analytics -->
+    <string name="lead_trends">Lead Trends</string>
+    <string name="status_breakdown">Status Breakdown</string>
+    <string name="vip_lock_title">VIP Analytics</string>
+    <string name="vip_lock_message">Upgrade to VIP to unlock advanced analytics, ML score insights, and detailed trend reporting.</string>
+    <string name="upgrade_now">Upgrade to VIP</string>
+    
+    <!-- Settings -->
+    <string name="profile">Profile</string>
+    <string name="timezone">Timezone</string>
+    <string name="notifications">Push Notifications</string>
+    <string name="your_tier">Your Plan</string>
+    <string name="tier_free">Free</string>
+    <string name="tier_vip">VIP</string>
+    <string name="upgrade_vip">Upgrade to VIP</string>
+    <string name="save_changes">Save Changes</string>
+    
+    <!-- VIP Pricing -->
+    <string name="vip_monthly">$19/month</string>
+    <string name="vip_yearly">$199/year</string>
+    <string name="vip_save">Save 13%</string>
+    
+    <!-- Ads -->
+    <string name="ad_attribution">Ad</string>
+    
+    <!-- Errors -->
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_network">No internet connection. Showing cached data.</string>
+    <string name="error_unauthorized">Session expired. Please log in again.</string>
+    
+    <!-- Empty states -->
+    <string name="no_leads">No leads yet</string>
+    <string name="no_leads_subtitle">Leads will appear here when they arrive.</string>
+    <string name="no_microsites">No microsites</string>
+    <string name="no_microsites_subtitle">Create your first microsite to start collecting leads.</string>
+</resources>

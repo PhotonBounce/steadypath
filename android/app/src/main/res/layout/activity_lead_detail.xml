@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background_dark"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:title="@string/lead_detail"
+            app:titleTextColor="@color/text_primary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_lead_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tv_lead_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Contact Info -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.PhotonBounce.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_lead_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tv_lead_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tv_lead_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tv_lead_source"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_muted"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_lead_niche"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_muted" />
+
+                    <TextView
+                        android:id="@+id/tv_ml_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/accent_secondary"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_call"
+                    style="@style/Widget.PhotonBounce.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/call"
+                    app:icon="@drawable/ic_call" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_email"
+                    style="@style/Widget.PhotonBounce.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/email"
+                    app:icon="@drawable/ic_email" />
+            </LinearLayout>
+
+            <!-- Status Changer -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.PhotonBounce.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="8dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/ic_search"
+                        android:backgroundTint="@color/surface_variant_dark"
+                        android:layout_marginBottom="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_update_status"
+                        style="@style/Widget.PhotonBounce.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Update Status" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Notes -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.PhotonBounce.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notes"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tv_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginBottom="16dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.PhotonBounce.TextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/add_note"
+                        android:layout_marginBottom="8dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_add_note"
+                        style="@style/Widget.PhotonBounce.Button.Outlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Add Note" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

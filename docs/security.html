@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Security | Helion</title>
+<meta name="description" content="Helion - The next-generation programming language.">
+<link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><div class="container"><nav>
+<a href="../index.html" class="logo">
+<svg viewBox="0 0 36 36" fill="none" width="36" height="36"><path d="M18 2L4 10v16l14 8 14-8V10L18 2z" stroke="#00d4aa" stroke-width="2"/><path d="M18 8v20M10 12v12m16-12v12" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/></svg>
+Helion
+</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="docs.html">Docs</a></li>
+<li><a href="playground.html">Playground</a></li>
+<li><a href="examples.html">Examples</a></li>
+<li><a href="download.html">Download</a></li>
+</ul>
+<div class="nav-cta">
+<a href="https://github.com/helion-lang/helion" target="_blank" rel="noopener">GitHub</a>
+<a href="playground.html" class="btn btn-primary">Try Online</a>
+</div>
+<button class="mobile-menu-btn" onclick="document.getElementById('navLinks').classList.toggle('active')">&#9776;</button>
+</nav></div></header>
+<section class="section" style="padding-top:100px;"><div class="container">
+<h1 class="section-title">Security Model</h1>
+<p class="section-subtitle">Security by capability. Common vulnerabilities are impossible by design.</p>
+<div class="card" style="margin-bottom:24px;"><h2>Capability-Based Security</h2>
+<div class="code-block" style="margin-top:12px;"><span class="kw">fn</span> <span class="fn">dangerous_operation</span>()
+    <span class="kw">requires</span> <span class="type">FileCap</span> + <span class="type">NetworkCap</span> + <span class="type">AICap</span>::budget(<span class="num">100</span>)
+{
+    <span class="cm">// Can only be called with these capabilities</span>
+}</div></div>
+<div class="grid-2">
+<div class="card"><h3>Memory Safety</h3><ul style="color:var(--text-secondary);line-height:2;">
+<li>Buffer overflow: Prevented by dependent types</li>
+<li>Use-after-free: Prevented by linear types</li>
+<li>Double-free: Prevented by ownership</li>
+<li>Null pointer: No nulls in safe code</li>
+<li>Data races: Prevented by ownership + effects</li>
+</ul></div>
+<div class="card"><h3>Information Flow</h3><ul style="color:var(--text-secondary);line-height:2;">
+<li>Secret labels tracked through types</li>
+<li>Declassification requires authorization</li>
+<li>No implicit flows from Secret to Public</li>
+<li>Side-channel attack resistance</li>
+</ul></div>
+</div>
+</div></section><footer><div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo"><svg viewBox="0 0 36 36" fill="none" width="28" height="28"><path d="M18 2L4 10v16l14 8 14-8V10L18 2z" stroke="#00d4aa" stroke-width="2"/><path d="M18 8v20M10 12v12m16-12v12" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/></svg>Helion</div>
+<p>The next-generation programming language. AI-native, formally verified, distributed by design.</p>
+</div>
+<div class="footer-links"><h4>Product</h4><ul>
+<li><a href="playground.html">Playground</a></li><li><a href="download.html">Download</a></li><li><a href="docs.html">Documentation</a></li>
+</ul></div>
+<div class="footer-links"><h4>Legal</h4><ul>
+<li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="about.html">About</a></li>
+</ul></div>
+</div>
+<div class="footer-bottom">
+<span>&copy; 2026 Helion Language. Apache 2.0 / MIT.</span>
+<span>Free forever. Powered by ads.</span>
+</div>
+</div></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>
